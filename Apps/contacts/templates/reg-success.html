@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Success</title>
+  <style>
+    .mainbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .mainbtn:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Successful Registration</h1>
+      <form action="{{url_for("success")}}" method="post">
+        <button type="submit" class="mainbtn" name="main">Main Page</button>
+      </form>
+    </div>
+</body>
+
+</html>
