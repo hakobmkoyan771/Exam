@@ -4,7 +4,7 @@ metadata:
   name: lessons
 spec:
   destination:
-    server: "192.168.59.105:6443"
+    name: in-cluster
     namespace: hakob
   project: lessons
   source:
