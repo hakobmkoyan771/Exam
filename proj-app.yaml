@@ -2,16 +2,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: lessons
-  namespace: hakob
 spec:
   destination:
     name: in-cluster
     namespace: hakob
-  project: lessons
+  project: default
   source:
-    path: .
     repoURL: https://github.com/hakobmkoyan771/infra.git
+    path: .
     targetRevision: HEAD
   syncPolicy:
-    syncOptions:
-      - ApplyOutOfSyncOnly=true
+    automated:
+      prune: false
+      selfHeal: false
