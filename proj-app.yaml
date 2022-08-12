@@ -7,7 +7,6 @@ spec:
   destination:
     name: in-cluster
     namespace: hakob
-  project: lessons
   source:
     path: .
     repoURL: https://github.com/hakobmkoyan771/infra.git
