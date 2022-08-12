@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: lessons
+  namespace: hakob
 spec:
   destination:
     name: in-cluster
