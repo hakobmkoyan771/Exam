@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: in-cluster
-    namespace: applications
+    namespace: default
   project: default
   source:
     repoURL: https://github.com/hakobmkoyan771/infra.git
