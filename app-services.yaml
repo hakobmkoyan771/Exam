@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: services
+  name: service
 spec:
   destination:
     name: in-cluster
@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/hakobmkoyan771/infra.git
-    path: infra/Services
+    path: Services
     targetRevision: HEAD
   syncPolicy:
     automated:
