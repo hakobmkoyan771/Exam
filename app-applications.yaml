@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/hakobmkoyan771/infra.git
-    path: .
+    path: Applications
     targetRevision: HEAD
   syncPolicy:
     automated:
